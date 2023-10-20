@@ -3,7 +3,7 @@ title: "Write Up Linear Model with Prediction"
 author: "Leonel D. Bautista"
 date: "10/19/23"
 output:
-  html_document: default
+  html_document: default 
   pdf_document: default
 ---
 
