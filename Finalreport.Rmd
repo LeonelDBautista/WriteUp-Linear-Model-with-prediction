@@ -1,0 +1,51 @@
+---
+title: "Write Up Linear Model with Prediction"
+author: "Leonel D. Bautista"
+date: "10/19/23"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r include=FALSE,echo=FALSE}
+require(tidyverse)
+require(tigerstats)
+require(knitr)
+require(foreign)
+```
+
+```{r, eval=TRUE,warning=FALSE}
+url <- "https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt"
+mydata <- read.csv(file=url,sep="",header=TRUE)  
+```
+
+# Introduction
+
+$H_0$ There is no meaningful difference in the data         
+
+$H_A$ There is a meaningful difference in the data   
+
+
+# Methods
+
+
+
+# Results
+
+
+
+## Graphical Results
+
+
+
+## Inferential Results
+
+
+
+## Numerical Results
+
+
+
+# Conclusion
+
+
