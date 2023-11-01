@@ -7,24 +7,29 @@ output:
   pdf_document: default
 ---
 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 ```{r include=FALSE,echo=FALSE}
 require(tidyverse)
 require(tigerstats)
 require(knitr)
 require(foreign)
-```
+install.packages("car")
+require(car)
 
-```{r, eval=TRUE,warning=FALSE}
-url <- "https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt"
-mydata <- read.csv(file=url,sep="",header=TRUE)  
+mydata <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)
+
 ```
 
 # Introduction
 
-$H_0$ There is no meaningful difference in the data         
+($H_0$): There is no meaningful difference in how well arm strength, grip strength, or a combination of both can predict SIMS scores.
 
-$H_A$ There is a meaningful difference in the data   
-
+($H_A$): There is a noticeable difference in how well arm strength, grip strength, or a combination of both can predict SIMS scores. 
 
 # Methods
 
