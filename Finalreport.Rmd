@@ -50,4 +50,5 @@ specificdata2 <- data.frame(GRIP = 94, ARM = 88)
 predict(model2, specificdata2, interval="prediction")
 ```
 
+The 95% prediction interval for estimating SIMS using GRIP, specifically when GRIP is 94 and ARM is 88, spans from -3.107961 to 2.035652, resulting in a total prediction range of 5.143613. This is the widest prediction range among all the models, indicating it is the least accurate predictor for SIMS at ARM = 88 and GRIP = 94.    
 
