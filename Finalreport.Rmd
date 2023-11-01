@@ -31,26 +31,14 @@ mydata <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_s
 
 ($H_A$): There is a noticeable difference in how well arm strength, grip strength, or a combination of both can predict SIMS scores. 
 
-# Methods
+```{r}
+model1 <- lm(SIMS~ARM,data=mydata)
+plot(SIMS~ARM,data=mydata)
+abline(model1)
+specificdata1 <- data.frame(GRIP = 94, ARM = 88)
+predict(model1, specificdata1, interval="prediction")
+cor(mydata$SIMS, mydata$ARM)
+```
 
-
-
-# Results
-
-
-
-## Graphical Results
-
-
-
-## Inferential Results
-
-
-
-## Numerical Results
-
-
-
-# Conclusion
-
+  
 
