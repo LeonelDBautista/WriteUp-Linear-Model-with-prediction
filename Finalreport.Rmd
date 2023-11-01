@@ -58,3 +58,5 @@ avPlots(model3)
 specificdata3 <- data.frame(GRIP = 94, ARM = 88)
 predict(model3, specificdata3, interval="prediction")
 ```
+
+The 95% prediction interval for estimating SIMS using both ARMS and GRIP, with GRIP=94 and ARM=88, is calculated to be between -2.132373 and 2.431668. The total range of prediction is 4.564041. This model provides the most precise estimate among all the models, making it the most reliable predictor of the SIMS value when ARM = 88 and GRIP = 94.    
