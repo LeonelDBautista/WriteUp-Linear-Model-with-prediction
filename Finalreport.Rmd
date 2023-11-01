@@ -64,3 +64,7 @@ The 95% prediction interval for estimating SIMS using both ARMS and GRIP, with G
 ```{r}
 anova(model1,model3)
 ```
+
+
+The extremely low p-value from the ANOVA test (0.000004994) provides strong evidence that the difference observed between the top two predictor models, models 1 and 3, is indeed significant. As a result, we can confidently reject the null hypothesis. Given the substantial difference in prediction range between model 2 and the best-performing models, conducting ANOVA tests for other model pairings seems unnecessary.   
+
