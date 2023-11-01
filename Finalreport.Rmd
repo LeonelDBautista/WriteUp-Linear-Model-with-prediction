@@ -42,5 +42,12 @@ cor(mydata$SIMS, mydata$ARM)
 
 The 95% prediction interval for estimating SIMS using ARM at the values GRIP=94 and ARM=88 is from -1.726209 to 3.138977. The overall prediction range is 4.865186. Among all the models, this has the second smallest prediction range, indicating it's the second most accurate predictor for SIMS at ARM = 88 and GRIP = 94.    
 
+```{r}
+model2 <- lm(SIMS~GRIP,data=mydata)
+plot(SIMS~GRIP,data=mydata, main= "SIMS vs GRIP")
+abline(model2)
+specificdata2 <- data.frame(GRIP = 94, ARM = 88)
+predict(model2, specificdata2, interval="prediction")
+```
 
 
